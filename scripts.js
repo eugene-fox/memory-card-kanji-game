@@ -68,6 +68,6 @@ function shuffle() {
     });
   }
 
-shuffle();
+// shuffle();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
