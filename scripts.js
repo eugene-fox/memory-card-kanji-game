@@ -1,8 +1,11 @@
 const cards = document.querySelectorAll('.memory-card');
+const WIN_SCORE = 14;
+const gamefield = document.querySelector('.gamefield__card-container');
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let score = 0;
 
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
@@ -10,7 +13,6 @@ function resetBoard() {
 }
 
 function unflipCards() {
-    console.log('переворачиваем! МИМО', firstCard, secondCard)
     lockBoard = true;
     setTimeout(() => {
         firstCard.classList.remove('memory-card_flip');
@@ -21,10 +23,14 @@ function unflipCards() {
 }
 
 function disableCards() {
-    console.log('Отключаем карточки!МОЛОДЕЦ)')
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+    score += 1;
     resetBoard();
+    if (score == WIN_SCORE) {
+        gamefield.classList.add('gamefield__card-container_disable');
+        document.querySelector('.gamefield__victory-header').classList.add('gamefield__victory-header_visible');
+    }
 }
 
 function checkForMatch() {
