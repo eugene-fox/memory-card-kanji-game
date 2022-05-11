@@ -16,7 +16,7 @@ function unflipCards() {
         firstCard.classList.remove('memory-card_flip');
         secondCard.classList.remove('memory-card_flip');
         resetBoard();
-    }, 5000);
+    }, 3000);
     
 }
 
