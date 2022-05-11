@@ -1,0 +1,9 @@
+.gamefield {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: 90%;
+    perspective: 1000px;
+}

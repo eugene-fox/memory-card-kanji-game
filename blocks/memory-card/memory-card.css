@@ -1,0 +1,49 @@
+/* Размер карточки 292px на 400px */
+
+.memory-card {
+    position: relative;
+    box-sizing: border-box;
+    width: calc((292px / 2.5) - 10px);
+    height: calc((400px / 2.5) - 10px);
+    /* width: calc(10% - 10px);
+    height: calc((100% / 4) - 10px); */
+    margin: 5px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.6);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card:active {
+    transform: scale(.97);
+}
+
+.memory-card:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 6px rgba(0,0,0,1);
+}
+
+.memory-card_flip {
+    transform: rotateY(180deg);
+    transition: transform .5s;
+    box-shadow: -3px 3px 3px rgba(0,0,0,.6);
+}
+
+.memory-card_flip:hover {
+    box-shadow: -6px 6px 6px rgba(0,0,0,1);
+}
+
+.memory-card__front-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.memory-card__back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}

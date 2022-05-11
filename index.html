@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji memory game</title>
+    <link rel="stylesheet" href="./pages/index.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+<body class="page">
+    <div class="page__overlay"></div>
+
+    <section class="gamefield">
+
+        <div class="memory-card" data-kanji="big">
+            <img src="./images/cards/min/card-1-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="small">
+            <img src="./images/cards/min/card-2-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="long">
+            <img src="./images/cards/min/card-3-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="short">
+            <img src="./images/cards/min/card-4-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="high">
+            <img src="./images/cards/min/card-5-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="low">
+            <img src="./images/cards/min/card-6-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="cheap">
+            <img src="./images/cards/min/card-7-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="expensive">
+            <img src="./images/cards/min/card-8-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="many">
+            <img src="./images/cards/min/card-9-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="few">
+            <img src="./images/cards/min/card-10-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="new">
+            <img src="./images/cards/min/card-11-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="old">
+            <img src="./images/cards/min/card-12-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="light">
+            <img src="./images/cards/min/card-13-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="dark">
+            <img src="./images/cards/min/card-14-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="new">
+            <img src="./images/cards/min/card-15-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="low">
+            <img src="./images/cards/min/card-16-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="light">
+            <img src="./images/cards/min/card-17-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="few">
+            <img src="./images/cards/min/card-18-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="expensive">
+            <img src="./images/cards/min/card-19-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="many">
+            <img src="./images/cards/min/card-20-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="cheap">
+            <img src="./images/cards/min/card-21-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="big">
+            <img src="./images/cards/min/card-22-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="long">
+            <img src="./images/cards/min/card-23-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="dark">
+            <img src="./images/cards/min/card-24-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="old">
+            <img src="./images/cards/min/card-25-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="high">
+            <img src="./images/cards/min/card-26-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="small">
+            <img src="./images/cards/min/card-27-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+        <div class="memory-card" data-kanji="short">
+            <img src="./images/cards/min/card-28-min.png" alt="Карточка" class="memory-card__front-face">
+            <img src="./images/cards/min/back-face-min.png" alt="Карточка" class="memory-card__back-face">
+        </div>
+
+    </section>
+
+    <!-- <a href='https://ru.freepik.com/photos/tree'>Tree фото создан(а) wirestock - ru.freepik.com</a> -->
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
